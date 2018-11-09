@@ -1,2 +1,2 @@
 # ego1st
-Programları alıp kullanabilirsiniz fakat izinsiz yayıımlamak YASAKTIR!
+Tebrikler Readme' yi okuyan tek insansınız
