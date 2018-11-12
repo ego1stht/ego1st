@@ -1,0 +1,181 @@
+#include "pch.h"
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+class calisanaylik {
+
+public:
+
+	int deger = 0;
+
+	int calisaninmaasi;
+	int gunlukyevmiye;
+	int maasyatmagunu;
+
+	int aylikmaascalisan() {
+
+		cout << "Calisanin aylik islerini hesaplamaya hos geldiniz.\n";
+		cout << "Gunluk yevmiyeyi girin: ";
+
+		cin >> gunlukyevmiye;
+
+		cout << "Eger para toplu verilcek ise maasin yatma gununu girin: ";
+
+		cin >> maasyatmagunu;
+
+		cout << "Maas " << maasyatmagunu << "/11/2018 ' de " << gunlukyevmiye * 30 << " TL olarak verilecektir.\n";
+
+		return deger;
+	}
+
+}calisan;
+
+class calisanyillik {
+
+public:
+
+	int deger = 0;
+
+	int kacay;
+	int calisaninmaasi;
+	int toplampara;
+
+	int biryildakazanilanparahesaplama() {
+
+		cout << "Calisan isyerinizde kac aydir calisiyor?: ";
+		cin >> kacay;
+
+		cout << "Calisanin aylik maasini giriniz(Hesaplamadiysaniz programi kapa ac yapip 1. secenege gidebilirsiniz): ";
+		cin >> calisaninmaasi;
+
+		toplampara = kacay * calisaninmaasi;
+
+		cout << "Calisanin isyerinizden kazandigi toplam para: \n" << toplampara;
+
+		return deger;
+	}
+
+}calisan0;
+
+class genelislemlersinifi {
+
+public:
+
+	int deger = 0;
+
+	int yas;
+
+	char bilgi[10];
+	char deneyim[10];
+	char isimsoyisim[50];
+
+	int terfihesaplama(){
+	
+		cout << "Bu islem tamamen yapay zekaya aittir. Kesin uygulamaniza gerek yoktur.\n";
+
+		cout << "SIRASIYLA yas(tamsayi), bilgi(iyi,orta,kotu) ve deneyim(iyi,orta,kotu) olarak giriniz: ";
+
+		cin >> yas;
+
+		gets_s(bilgi);
+		gets_s(deneyim);
+
+		cout << "Calisanin isim ve soyismini girin(Tek bir satirda bosluklu sekilde): \n";
+
+		gets_s(isimsoyisim);
+
+		if (yas > 25) {
+
+			if (strcmp(bilgi, "iyi") == 0) {
+
+				if (strcmp(deneyim, "iyi") == 0) {
+
+					cout << isimsoyisim << " isimli calisani terfi ettirmeniz uygun olacaktir.\n";
+					
+				}
+				else cout << "Calisana deneyimini guclendirmesini soyleyebilirsiniz.\n";
+
+			}
+			else cout << "Calisana bilgisini arttirmasini soyleyebilirsiniz.\n";
+
+		}
+		else cout << "Calisani olgun olduktan sonra terfi ettirmeniz uygun olacaktir.\n";
+	
+		return deger;
+	}
+
+}calisan1;
+
+int sec;
+
+int main()
+{
+	cout << "Isyeri Icin Yazilim'a hosgeldiniz.\n";
+
+	cout << "----------------------------------\n";
+
+	cout << "1-Calisan icin aylik islemler.\n";
+	cout << "2-Calisan icin yillik islemler.\n";
+	cout << "3-Calisan genel islemler.\n";
+
+	cout << "-------------------------------\n";
+
+	cout << "Sec: ";
+
+	cin >> sec;
+
+	switch (sec) {
+
+	case 1:
+
+		cout << calisan.aylikmaascalisan();
+
+		break;
+
+	case 2:
+
+		cout << calisan0.biryildakazanilanparahesaplama();
+
+		break;
+
+	case 3:
+
+		cout << calisan1.terfihesaplama();
+	}
+
+	system("pause");
+};
+
+class girissistemi {
+
+public:
+
+	char kullaniciadi[5] = {'a','d','m','i','n'};
+	char sifre[5] = { 'l','o','g','i','n' };
+	char girilenkullaniciadi[50];
+	char girilensifre[50];
+
+	int giris() {
+	    
+		cout << "Lutfen Kullanici Adi ve Sifre'yi girin.\n";
+		cout << "---------------------------------------\n";
+		cout << "Kullanici Adi: ";
+		gets_s(girilenkullaniciadi);
+
+		if (strcmp(kullaniciadi, girilenkullaniciadi) == 0) {
+
+			cout << "Sifre: ";
+			gets_s(girilensifre);
+
+			if (strcmp(sifre, girilensifre) == 0) {
+
+				cout << "Basariyla giris yaptiniz. Programa aktariliyorsunuz.\n";
+				cout << "----------------------------------------------------\n";
+
+			} else cout << "Sifre yanlis.\n";
+
+		} else cout << "Kullanici Adi yanlis.\n";
+	}
+}gbolumu;
