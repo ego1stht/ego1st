@@ -1,0 +1,397 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cstring>
+
+
+int a, b;
+
+void hata() {
+
+	std::cout << "Yanlis secim.\n";
+	
+}
+
+class altinHilesi
+{
+public:
+	int altin=99999;
+	int baslangic;
+	int oyundakialtin = 0;
+
+	int altinIslem() {
+
+		baslangic = oyundakialtin;
+
+		if (baslangic > 0) {
+
+			baslangic = altin;
+		}
+		else if(baslangic == 0) {
+
+			baslangic = altin;
+		}
+		else  (baslangic < 0); {
+
+						baslangic = altin;
+		}
+		return altin;
+	}
+
+}altin;
+
+class wallHack
+{
+public:
+	int karsiTakim;
+	int gorunmeme;
+	int bakilmama=100;
+
+	int WallHack() {
+
+		if (bakilmama=100) {
+
+			karsiTakim = gorunmeme;
+
+		}
+		else (bakilmama = 0); {
+
+			karsiTakim = bakilmama;
+
+			if (bakilmama = 100) {
+
+				karsiTakim = gorunmeme;
+			}
+		}
+		return karsiTakim;
+	}
+
+}oyuncu;
+
+
+class aimBot
+{
+public:
+	int aim = 0;
+	int adamKafa = 100;
+
+	int aimIslem() {
+		while (1) {
+
+			if (aim = 0) {
+				aim = adamKafa;
+			}
+
+			if (aim = 100) {
+
+				break;
+			}
+		
+	    }
+		return aim;
+	}
+
+}aim;
+
+class olumsuzluk {
+public:
+
+	int can=0;
+	int oyundakican;
+	int fullCan=100;
+	int artis;
+
+	int artisHesapla() {
+
+		can = oyundakican;
+		artis = fullCan - can;
+		return artis;
+	}
+
+	int canFulle() {
+
+		can = can + artis;
+		return can;
+	}
+
+}oyuncu1;
+
+class sinirsizMermi {
+
+public:
+	int mermi = 0;
+	int fullmermi = 9999999;
+	int oyundakimermi=30;
+
+	int mermiFulle() {
+
+		if (oyundakimermi = mermi) {
+
+			oyundakimermi = fullmermi;
+		}
+		else (oyundakimermi = 30); {
+
+			oyundakimermi = fullmermi;
+
+		} if (oyundakimermi < 30) {
+
+			oyundakimermi = fullmermi;
+
+		}
+		return oyundakimermi;
+	}
+}oyundakimermi;
+
+
+class enguzelsilah {
+public:
+	int goodwp=3;
+	int nowwp=badwp;
+	int badwp=1;
+    
+	int silahAl() {
+
+		if (nowwp=badwp) {
+
+			nowwp = goodwp;
+
+		}
+		if (nowwp = nowwp) {
+			nowwp = goodwp;
+		}
+		return nowwp;
+	}
+
+}silah;
+
+
+class hizliGecis {
+
+public: 
+	int normalGecis=5;
+	int olmasiGereken=0;
+	int fark;
+
+	int farkhesapla() {
+
+		fark = normalGecis - olmasiGereken;
+
+		return fark;
+	}
+
+	int gecisAyarla() {
+
+		olmasiGereken = olmasiGereken - fark;
+		return olmasiGereken;
+	}
+
+}gecisSure;
+
+
+class gorunmezlik {
+public:
+	int vucutgorunurlugu=100;
+
+	int gorunmezlikIslem() {
+
+		if (vucutgorunurlugu=100) {
+
+			vucutgorunurlugu = 0;
+
+		}
+		return vucutgorunurlugu;
+	}
+
+
+}oyuncu2;
+
+class sinirsizBomba {
+public:
+	int bombasayisi=5;
+	int fark;
+	int sinirsizB=99999;
+
+	int farkhesapla() {
+
+		fark = sinirsizB - bombasayisi;
+		return fark;
+	}
+
+	int bombaFulle() {
+
+		bombasayisi = fark + bombasayisi;
+		return bombasayisi;
+	}
+
+
+}bomba;
+
+class hizliKur {
+public:
+	int kurmasuresi=5;
+	int olmasigereken=0;
+	int fark;
+
+	int farkhesapla() {
+
+		fark = kurmasuresi - olmasigereken;
+		return fark;
+	}
+
+	int bombaAyarla() {
+
+		kurmasuresi = kurmasuresi - fark;
+		return kurmasuresi;
+	}
+
+}cedort;
+
+class hizliCoz {
+public:
+	int cozmesuresi = 5;
+	int olmasigereken = 0;
+	int fark;
+
+	int farkhesapla() {
+
+		fark = cozmesuresi - olmasigereken;
+		return fark;
+	}
+	int bombaCozum() {
+
+		cozmesuresi = cozmesuresi - fark;
+		return cozmesuresi;
+	}
+
+}cozced;
+
+class noQQ {
+
+public:
+	int silahdsuresi = 3;
+	int olmasig=0;
+	int fark;
+
+	int farkhesapla() {
+
+		fark = silahdsuresi - olmasig;
+
+		return fark;
+	}
+
+	int noqqa() {
+
+
+		silahdsuresi = fark - silahdsuresi;
+
+		return silahdsuresi;
+	}
+
+}silahd;
+
+int main() {
+	
+	int secim;
+	std::cout << "Lutfen hatalari ve eklememizi istediginiz ozellikleri : tekyazilimreport@gmail.com e-posta adresine gonderin.\n";
+	std::cout<< "----------------------\n";
+	std::cout << "Hile cesidini seciniz.\n";
+	std::cout << "1-Altin Hilesi\n";
+	std::cout << "2-WallHack\n";
+	std::cout << "3-AimBot\n";
+	std::cout << "4-Olumsuzluk\n";
+	std::cout << "5-Sinirsiz Mermi\n";
+	std::cout << "6-En Guzel Silah\n";
+	std::cout << "7-Hizli Silah Gecis\n";
+	std::cout << "8-Gorunmezlik\n";
+	std::cout << "9-Sinirsiz Bomba\n";
+	std::cout << "10-Hizli Bomba (C4) Kurma\n";
+	std::cout << "11-Hizli Bomba (C4) Cozme\n";
+	std::cout << "12-No QQ\n";
+	std::cout << "13-Butun Hileler Birden\n";
+
+	std::cin >> secim;
+
+	switch (secim) {
+	case 1:
+		std::cout << "Altin hilesi aktif.\n";
+		altin.altinIslem();
+		break;
+	case 2:
+		std::cout << "WallHack aktif.\n";
+		oyuncu.WallHack();
+		break;
+	case 3:
+		std::cout << "Aimbot aktif.\n";
+		aim.aimIslem();
+		break;
+	case 4:
+		std::cout << "Olumsuzluk aktif.\n";
+		oyuncu1.artisHesapla();
+		oyuncu1.canFulle();
+		break;
+	case 5:
+		std::cout << "Sinirsiz Mermi aktif.\n";
+		oyundakimermi.mermiFulle();
+		break;
+	case 6:
+		std::cout << "En Guzel Silah aktif.\n";
+		silah.silahAl();
+		break;
+	case 7:
+		std::cout << "Hizli silah gecisi aktif.\n";
+		gecisSure.farkhesapla();
+		gecisSure.gecisAyarla();
+		break;
+	case 8:
+		std::cout << "Gorunmezlik aktif edildi.\n";
+		oyuncu2.gorunmezlikIslem();
+		break;
+	case 9:
+		std::cout << "Sinirsiz bomba aktif edildi.\n";
+		bomba.farkhesapla();
+		bomba.bombaFulle();
+		break;
+	case 10:
+		std::cout << "Hizli bomba kurma aktif edildi.\n";
+		cedort.farkhesapla();
+		cedort.bombaAyarla();
+		break;
+	case 11:
+		std::cout << "Hizli bomba cozme aktif edildi.\n";
+		cozced.farkhesapla();
+		cozced.bombaCozum();
+		break;
+	case 12:
+		std::cout << "No QQ aktif edildi.\n";
+		silahd.farkhesapla();
+		silahd.noqqa();
+		break;
+	case 13:
+		std::cout << "Butun hileler aktif.\n";
+		std::cout << "Lutfen programı arkplanda surekli calistirin. Yoksa hile calismaz.";
+		altin.altinIslem();
+		oyuncu.WallHack();
+		aim.aimIslem();
+		oyuncu1.artisHesapla();
+		oyuncu1.canFulle();
+		oyundakimermi.mermiFulle();
+		silah.silahAl();
+		gecisSure.farkhesapla();
+		gecisSure.gecisAyarla();
+		oyuncu2.gorunmezlikIslem();
+		bomba.farkhesapla();
+		bomba.bombaFulle();
+		cedort.farkhesapla();
+		cedort.bombaAyarla();
+		cozced.farkhesapla();
+		cozced.bombaCozum();
+		silahd.farkhesapla();
+		silahd.noqqa();
+		break;
+	default:
+		hata();
+		break;
+	}
+		system("pause");
+		return 0;
+	
+}
